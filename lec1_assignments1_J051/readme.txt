@@ -1,0 +1,8 @@
+In this task, we explored and analyzed two reinforcement learning environments using the Gymnasium library: **MountainCar-v0** and **Acrobot-v1**. Both are part of the classic control suite and provide foundational challenges for understanding how agents interact with dynamic environments.
+
+In **MountainCar-v0**, the agent controls a car situated between two hills and must learn to build momentum to reach the top of the right hill. The key challenge is that the car’s engine is not powerful enough to reach the goal directly, so it must first move back to gain momentum. The environment has a two-dimensional observation space representing position and velocity, and a discrete action space with three possible actions: push left, do nothing, or push right. Episodes typically last up to 200 steps, with rewards given only upon reaching the goal.
+
+In **Acrobot-v1**, the agent must swing a two-link pendulum to reach a vertical position. The system cannot apply force to the base joint, requiring coordinated torque application to the second joint to create upward momentum. The observation space is six-dimensional, representing trigonometric values of angles and angular velocities. The action space includes three torque options: negative, zero, or positive. Episodes can last up to 500 steps, and the environment terminates early once the pendulum tip reaches a sufficient height.
+
+These environments highlight important concepts in reinforcement learning such as sparse rewards, action planning, and delayed gratification. Analyzing them helped develop a deeper understanding of how observation and action spaces influence agent design and learning complexity.
+
